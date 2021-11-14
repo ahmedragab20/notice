@@ -1,0 +1,31 @@
+.fqa {
+  background-color: #fff;
+
+  .questions {
+    .accordion,
+    .accordion-item,
+    .accordion-button {
+      border: none;
+      margin-bottom: 5px;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .accordion-button {
+      background-color: #f4f4f4;
+      color: gray;
+      border-radius: 10px;
+      box-shadow: none;
+    }
+    .accordion-button:not(.collapsed) {
+      color: gray;
+    }
+    .accordion-button::after {
+      display: none;
+    }
+    small {
+      font-size: 0.75rem;
+    }
+  }
+}

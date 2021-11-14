@@ -1,0 +1,61 @@
+.info {
+  .info-card {
+    background-color: #fff;
+    box-shadow: 0px 20px 50px #d1d1d185;
+    transition: $transition;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    .button {
+      letter-spacing: 1px;
+      &:hover {
+        letter-spacing: 2px;
+        filter: none;
+      }
+    }
+
+    &.one {
+      border-top: 3px solid #1274e7;
+      &:hover {
+        .button {
+          background-color: #1274e7;
+          color: #fff;
+        }
+      }
+    }
+    &.two {
+      border-top: 3px solid #00ffa8;
+      &:hover {
+        .button {
+          background-color: #00ffa8;
+          color: #fff;
+        }
+      }
+    }
+    &.three {
+      border-top: 3px solid #ff9800;
+      &:hover {
+        .button {
+          background-color: #ff9800;
+          color: #fff;
+        }
+      }
+    }
+
+    .title {
+      h4 {
+        font-weight: 600;
+      }
+
+      span {
+        font-size: $sm;
+        padding: 5px 7px;
+        border-radius: 7px;
+        background-color: rgba(216, 216, 216, 0.4);
+        font-weight: 600;
+      }
+    }
+  }
+}

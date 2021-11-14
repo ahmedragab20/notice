@@ -1,0 +1,19 @@
+.numbers {
+  background-color: #fff;
+
+  .numbers-card {
+    i {
+      font-size: 3rem;
+    }
+    div {
+      span {
+        padding: 5px 7px;
+        background-color: #d1d1d157;
+        border-radius: 10px;
+        font-size: $sm;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+  }
+}

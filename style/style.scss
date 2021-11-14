@@ -1,0 +1,96 @@
+/* The Main File */
+
+// Files imports
+@import "./_variables";
+@import "./_header";
+@import "./_info";
+@import "./_numbers";
+@import "./_video";
+@import "./_plans";
+@import "./_companies";
+@import "./_fqa";
+@import "./_footer";
+@import "./_media";
+
+// fonts
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+/* scroll bar styyling */
+*::selection {
+  background-color: #d1d1d1;
+  color: #444444;
+}
+/* Thescroll handle */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #999;
+  box-shadow: 0 0 0 5px inset;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $black;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+html,
+body {
+  // font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #f4f4f4;
+  color: #444444;
+
+  .to-top {
+    bottom: 25px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: $black;
+    opacity: 0;
+    pointer-events: none;
+    filter: $btnShadow;
+    transition: $transition;
+    z-index: 999 * 999;
+
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    a {
+      color: $light;
+      width: $full;
+      height: $full;
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: $transition;
+    }
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+
+  .button {
+    border: 1px solid transparent;
+    background: $light;
+    color: $black;
+    padding: 7px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.5s;
+    filter: $btnShadow;
+  }
+}

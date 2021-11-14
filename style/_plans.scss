@@ -1,0 +1,82 @@
+.plans {
+  background-color: $black;
+  color: #fff;
+
+  .headline {
+    p {
+      color: #999;
+    }
+  }
+
+  .plans-card {
+    background-color: #444444;
+    border-top: 3px solid #777777;
+
+    &.active {
+      border-top: 3px solid $orange;
+
+      .button {
+        background-color: $orange;
+        color: #fff;
+      }
+    }
+    * {
+      text-align: center;
+    }
+    h4 {
+      font-weight: 900;
+      font-size: 1.8rem;
+      margin: 30px auto;
+    }
+    span {
+      color: #777777;
+      font-weight: 900;
+
+      &.popular {
+        color: $orange;
+      }
+    }
+    h6 {
+      font-weight: 900;
+      margin: 30px auto 10px auto;
+      background-color: rgba(153, 153, 153, 0.4);
+      color: rgb(182, 182, 182);
+      padding: 5px 7px;
+      border-radius: 7px;
+    }
+    p {
+      color: #777777;
+    }
+    .button {
+      margin: 30px auto;
+      padding-inline: 50px;
+      background-color: #5e5e5e;
+      color: $light;
+      transition: $transition;
+
+      &:hover {
+        opacity: 0.9;
+        filter: none;
+      }
+    }
+  }
+
+  .msg {
+    p {
+      color: #999;
+    }
+    .button {
+      padding: 10px 15px;
+      background-color: #5e5e5e;
+      color: rgb(165, 165, 165);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: $transition;
+
+      &:hover {
+        opacity: 0.9;
+        filter: none;
+      }
+    }
+  }
+}

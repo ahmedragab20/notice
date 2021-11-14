@@ -1,0 +1,31 @@
+@media (min-width: 1025px) {
+  .container {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    .context {
+      .context-card {
+        position: static !important;
+        // top: 4vh !important;
+        .button {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  header {
+    .list {
+      width: 75%;
+    }
+  }
+  .plans {
+    * {
+      text-align: center;
+    }
+  }
+}

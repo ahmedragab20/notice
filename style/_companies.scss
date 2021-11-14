@@ -1,0 +1,14 @@
+.companies {
+  background-color: $blue;
+  color: $light;
+
+  .companies-card {
+    img {
+      user-select: none;
+      pointer-events: none;
+    }
+    &.active {
+      background-color: $darkBlue;
+    }
+  }
+}
